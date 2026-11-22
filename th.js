@@ -1,5 +1,5 @@
 // คำแปลภาษาไทยทั้งหมดของเว็บ ภาษาอังกฤษอยู่ใน index.html
-// แก้ไฟล์นี้หรือ index.html แล้วรัน  python tools/build_th.py  เพื่อสร้างหน้าไทย th/index.html ใหม่
+// แก้ไฟล์นี้หรือ index.html แล้วรัน  python _tools/build_th.py  เพื่อสร้างหน้าไทย th/index.html ใหม่
 // ชื่อด้านซ้ายต้องตรงกับ data-i18n ใน index.html
 window.BIZCAPTO_TH = {
   'meta.title': 'BizCapto | แอปสแกนนามบัตร เก็บรายชื่อไว้ในมือถือของคุณ',

@@ -1,5 +1,5 @@
 // BizCapto website: เมนู ภาษา ตัวสาธิตการสแกน และการเคลื่อนไหวของหน้าเว็บ
-// หน้าอังกฤษ = index.html, หน้าไทย = th/index.html (สร้างจาก th.js ด้วย tools/build_th.py)
+// หน้าอังกฤษ = index.html, หน้าไทย = th/index.html (สร้างจาก th.js ด้วย _tools/build_th.py)
 const LANG_KEY = 'bizcapto-lang';
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;

@@ -2,7 +2,7 @@
 # และอัปเดตข้อมูล FAQ ให้ Google (FAQPage) ในทั้ง 2 หน้าให้ตรงกับคำถามบนหน้า
 #
 # วิธีใช้: แก้ข้อความใน index.html หรือ th.js แล้วรันจากโฟลเดอร์เว็บ
-#     python tools/build_th.py
+#     python _tools/build_th.py
 # ห้ามแก้ th/index.html ตรงๆ เพราะจะถูกเขียนทับทุกครั้งที่รัน
 # ใช้แค่ Python ที่มากับเครื่อง ไม่ต้องลงอะไรเพิ่ม
 import html
@@ -105,7 +105,7 @@ def main():
 
     title, desc = html.escape(th['meta.title'], quote=True), html.escape(th['meta.desc'], quote=True)
     t = sub1(t, '<!DOCTYPE html>\n<html lang="en">',
-             '<!DOCTYPE html>\n<!-- สร้างอัตโนมัติจาก index.html + th.js ด้วย tools/build_th.py ห้ามแก้ไฟล์นี้ตรงๆ -->\n<html lang="th">')
+             '<!DOCTYPE html>\n<!-- สร้างอัตโนมัติจาก index.html + th.js ด้วย _tools/build_th.py ห้ามแก้ไฟล์นี้ตรงๆ -->\n<html lang="th">')
     t = re.sub(r'<title>.*?</title>', '<title>' + title + '</title>', t, count=1)
     t = re.sub(r'(<meta name="description" content=")[^"]*', lambda m: m.group(1) + desc, t, count=1)
     t = re.sub(r'(<meta property="og:title" content=")[^"]*', lambda m: m.group(1) + title, t, count=1)
