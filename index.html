@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BizCapto: Offline Business Card Scanner</title>
-  <meta name="description" content="Business card scanner for Android. Save cards as contacts, sort into groups, call, email, LINE or WhatsApp. Offline, exports to Excel. Reads English and Thai.">
+  <meta name="description" content="Business card scanner for Android. Save cards as contacts, sort into groups, call, email, LINE or WhatsApp. Offline, Excel export, fingerprint app lock.">
   <meta name="google-site-verification" content="9E5ic6exMu49nEAiIoT-Es5bumaMfsEbR8roI2fSj4I">
   <link rel="canonical" href="https://rmshowdown.github.io/bizcapto/">
   <!-- หน้าเดียวกัน 2 ภาษา: บอก Google ว่าหน้าไหนภาษาอะไร (ใส่เหมือนกันทั้ง 2 หน้า) -->
@@ -18,7 +18,7 @@
     "@type": "SoftwareApplication",
     "name": "BizCapto",
     "alternateName": "BizCapto: Business Card Scan",
-    "description": "Business card scanner for Android. Save cards as contacts, sort into groups, call, email, LINE or WhatsApp. Offline, exports to Excel. Reads English and Thai.",
+    "description": "Business card scanner for Android. Save cards as contacts, sort into groups, call, email, LINE or WhatsApp. Offline, Excel export, fingerprint app lock.",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Android 7.0 or newer",
     "inLanguage": "en",
@@ -26,7 +26,7 @@
     "image": "https://rmshowdown.github.io/bizcapto/img/og-image.png",
     "installUrl": "https://play.google.com/store/apps/details?id=com.rmshowdown.bizcapto",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "10 cards included. Unlimited cards with a one-time in-app purchase." },
-    "featureList": ["Business card scanner with on-device OCR", "Auto crop and auto capture", "Organize business cards into groups", "Search, star, call, email and share contacts", "Chat on LINE or WhatsApp from a card in one tap", "Find a company on the map from its card", "Export and import Excel (.xlsx)", "Works offline, no account"],
+    "featureList": ["Business card scanner with on-device OCR", "Auto crop and auto capture", "Organize business cards into groups", "Search, star, call, email and share contacts", "Chat on LINE or WhatsApp from a card in one tap", "Find a company on the map from its card", "Export and import Excel (.xlsx)", "App lock with fingerprint, face or screen lock", "Works offline, no account"],
     "publisher": { "@type": "Organization", "name": "RM Showdown", "email": "rmshowdown.dev@gmail.com" }
   }
   </script>
@@ -41,7 +41,7 @@
         "name": "Which languages can it read?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "It reads business cards (name cards) in English and Thai. English reads well. Thai is supported too and still improving, so some words may come out wrong. That is why you review every card before saving."
+          "text": "It reads business cards (name cards) in the app's languages. English reads best. Other languages are still improving, so some words may come out wrong. That is why you review every card before saving."
         }
       },
       {
@@ -50,6 +50,14 @@
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "No. Scanning, reading and saving all happen on the phone. Only the LinkedIn button opens your browser, and only when you tap it."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I lock the app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Turn on \"App lock\" in Settings, and BizCapto opens only with your fingerprint, face or screen lock. It uses your phone's own lock, so the app keeps no password of its own."
         }
       },
       {
@@ -73,7 +81,7 @@
         "name": "Which languages does the app use?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The app follows your phone's language. English and Thai are available, and more languages are planned."
+          "text": "The app follows your phone's language. On Android 13 or newer, you can also pick its language in your phone's Settings. More languages are planned."
         }
       },
       {
@@ -92,7 +100,7 @@
   <meta property="og:site_name" content="BizCapto">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="BizCapto: Offline Business Card Scanner">
-  <meta property="og:description" content="Business card scanner for Android. Save cards as contacts, sort into groups, call, email, LINE or WhatsApp. Offline, exports to Excel. Reads English and Thai.">
+  <meta property="og:description" content="Business card scanner for Android. Save cards as contacts, sort into groups, call, email, LINE or WhatsApp. Offline, Excel export, fingerprint app lock.">
   <meta property="og:url" content="https://rmshowdown.github.io/bizcapto/">
   <meta property="og:image" content="https://rmshowdown.github.io/bizcapto/img/og-image.png">
   <meta property="og:image:width" content="1024">
@@ -401,11 +409,15 @@
         <div class="qa">
           <details open>
             <summary data-i18n="faq.1.q">Which languages can it read?</summary>
-            <p data-i18n="faq.1.a">It reads business cards (name cards) in English and Thai. English reads well. Thai is supported too and still improving, so some words may come out wrong. That is why you review every card before saving.</p>
+            <p data-i18n="faq.1.a">It reads business cards (name cards) in the app's languages. English reads best. Other languages are still improving, so some words may come out wrong. That is why you review every card before saving.</p>
           </details>
           <details>
             <summary data-i18n="faq.2.q">Do I need the internet?</summary>
             <p data-i18n="faq.2.a">No. Scanning, reading and saving all happen on the phone. Only the LinkedIn button opens your browser, and only when you tap it.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq.7.q">Can I lock the app?</summary>
+            <p data-i18n="faq.7.a">Yes. Turn on "App lock" in Settings, and BizCapto opens only with your fingerprint, face or screen lock. It uses your phone's own lock, so the app keeps no password of its own.</p>
           </details>
           <details>
             <summary data-i18n="faq.3.q">Where can I download it?</summary>
@@ -417,7 +429,7 @@
           </details>
           <details>
             <summary data-i18n="faq.5.q">Which languages does the app use?</summary>
-            <p data-i18n="faq.5.a">The app follows your phone's language. English and Thai are available, and more languages are planned.</p>
+            <p data-i18n="faq.5.a">The app follows your phone's language. On Android 13 or newer, you can also pick its language in your phone's Settings. More languages are planned.</p>
           </details>
           <details>
             <summary data-i18n="faq.6.q">What happens if I change phones?</summary>
