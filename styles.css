@@ -417,6 +417,12 @@ html:not(.js) .belt { display: none; }
 .plan-main::before { content: ""; position: absolute; inset: -2px; z-index: -1; border-radius: 22px; background: conic-gradient(from var(--a), var(--indigo-strong), var(--indigo), var(--amber), var(--indigo-strong)); animation: orbit 6s linear infinite; }
 .plan-main::after { content: ""; position: absolute; inset: 1px; z-index: -1; border-radius: 19px; background: var(--bg); }
 @keyframes orbit { to { --a: 360deg; } }
+/* ปุ่ม Google Play ที่กดได้: กรอบแสงวิ่งแบบเดียวกับการ์ดราคา (ป้าย App Store ที่ยังไม่มีไม่ใส่) */
+a.soon { position: relative; isolation: isolate; }
+a.soon::before { content: ""; position: absolute; inset: -2px; z-index: -1; border-radius: 14px; background: conic-gradient(from var(--a), var(--indigo-strong), var(--indigo), var(--amber), var(--indigo-strong)); animation: orbit 6s linear infinite; }
+a.soon::after { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 12px; background: var(--indigo-ink); transition: background-color .2s ease; }
+a.soon:hover::after { background: #4345c9; }
+.plan-cta { display: inline-flex; width: 11rem; margin-top: 1rem; }
 
 /* คำถาม */
 :root { interpolate-size: allow-keywords; }
