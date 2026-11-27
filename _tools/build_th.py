@@ -121,6 +121,9 @@ def main():
     t = re.sub(r'("@type": "SoftwareApplication",.*?"description": ")[^"]*',
                lambda m: m.group(1) + th['meta.desc'].replace('"', '\\"'), t, count=1, flags=re.S)
 
+    # ป้าย Google Play ภาษาไทย (ไฟล์จริงจาก Google)
+    t = t.replace('img/badge-google-play-en.png" width="564" height="168"', 'img/badge-google-play-th.png" width="646" height="192"')
+
     # ลิงก์ไฟล์ในเว็บ: หน้าไทยอยู่ในโฟลเดอร์ th/ จึงต้องถอยขึ้น 1 ชั้น
     t = re.sub(r'(href|src)="(fonts/|styles\.css|script\.js|privacy\.html|img/)', r'\1="../\2', t)
     # ปุ่มภาษา
