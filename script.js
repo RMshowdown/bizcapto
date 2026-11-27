@@ -143,6 +143,7 @@ if (canHover && !reducedMotion) {
     now.y += (target.y - now.y) * 0.08;
     phone.style.setProperty('--ry', `${now.x * 11}deg`);
     phone.style.setProperty('--rx', `${now.y * -9}deg`);
+    phone.style.setProperty('--gx', now.x.toFixed(3));
     pills.forEach((pill) => {
       const depth = Number(pill.dataset.depth);
       pill.style.setProperty('--px', `${now.x * depth}px`);
@@ -180,7 +181,7 @@ document.getElementById('beltTrack').innerHTML = SAMPLE_CARDS.map(paperCard).joi
 
 // ---------- แสดงเนื้อหาตอนเลื่อนถึง ----------
 const revealGroups = [
-  ['.section h2, .closing h2, .privacy .lead, .privacy .text-link, .fine'],
+  ['.section h2, .closing h2, .privacy .lead, .privacy .text-link, .promise'],
   ['.steps li', 0.14],
   ['.tile', 0.07],
   ['.checks li', 0.1],
