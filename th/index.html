@@ -27,7 +27,7 @@
     "image": "https://rmshowdown.github.io/bizcapto/img/og-image-th.png",
     "installUrl": "https://play.google.com/store/apps/details?id=com.rmshowdown.bizcapto",
     "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "10 cards included. Unlimited cards with a one-time in-app purchase." },
-    "featureList": ["Business card scanner with on-device OCR", "Auto crop and auto capture", "Organize business cards into groups", "Search, star, call, email and share contacts", "Chat on LINE or WhatsApp from a card in one tap", "Find a company on the map from its card", "Export and import Excel (.xlsx)", "App lock with fingerprint, face or screen lock", "Works offline, no account"],
+    "featureList": ["Business card scanner with on-device OCR", "Auto crop and auto capture", "Organize business cards into groups", "Search, star, call, email and share contacts", "Chat on LINE or WhatsApp from a card in one tap", "Find a company on the map from its card", "Export and import Excel (.xlsx)", "App lock with fingerprint, face or screen lock", "Works offline and in airplane mode, no account, no cloud"],
     "publisher": { "@type": "Organization", "name": "RM Showdown", "email": "rmshowdown.dev@gmail.com" }
   }
   </script>
@@ -176,20 +176,30 @@
           <p class="eyebrow" data-i18n="hero.eyebrow">แอปสแกนนามบัตรแบบ<span class="hl">ออฟไลน์</span></p>
           <h1 data-i18n="hero.title">สแกนนามบัตร<br>ได้รายชื่อทันที<br><span>เก็บไว้ในมือถือคุณเท่านั้น</span></h1>
           <p class="lead" data-i18n="hero.lead">BizCapto เปลี่ยนนามบัตรกระดาษเป็นรายชื่อที่ค้นหา โทร และส่งอีเมลได้ทันที ใช้ได้แม้ไม่มีเน็ต ไม่ต้องสมัครบัญชี และไม่มีคลาวด์</p>
+          <ul class="proof">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h.01M8.5 16.43a5 5 0 0 1 7 0M5 12.86a10 10 0 0 1 5.17-2.69M19 12.86a10 10 0 0 0-2-1.52M2 8.82a15 15 0 0 1 4.18-2.64M22 8.82a15 15 0 0 0-11.29-3.76M2 2l20 20"/></svg><span data-i18n="hero.proof.1">ไม่ต้องใช้เน็ต</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L11 8 2.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2Z"/></svg><span data-i18n="hero.proof.2">ใช้ได้ในโหมดเครื่องบิน</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 2l20 20M5.78 5.78A7 7 0 0 0 9 19h8.5a4.5 4.5 0 0 0 1.3-.19M21.53 16.5A4.5 4.5 0 0 0 17.5 10h-1.79A7 7 0 0 0 10 5.07"/></svg><span data-i18n="hero.proof.3">ไม่เก็บข้อมูลบนคลาวด์</span></li>
+          </ul>
+          <p class="check-it" data-i18n="hero.check">ลองเช็กเองได้: เปิดโหมดเครื่องบิน แล้วสแกนนามบัตร ทุกอย่างยังใช้ได้ปกติ</p>
           <div class="actions">
             <div class="stores">
               <a class="soon" href="https://play.google.com/store/apps/details?id=com.rmshowdown.bizcapto&amp;referrer=utm_source%3Dwebsite"><small data-i18n="cta.play">มีให้โหลดแล้วบน</small><strong>Google Play</strong></a>
               <span class="soon soon-later"><small data-i18n="cta.planned">มีแผนทำบน</small><strong>App Store</strong></span>
             </div>
-            <a class="btn btn-line" href="#how" data-i18n="hero.secondary">ดูวิธีใช้</a>
+            <a class="how-link" href="#how"><span data-i18n="hero.secondary">ดูวิธีใช้</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
           </div>
         </div>
 
         <figure class="demo">
           <div class="bob">
           <div class="phone" id="phone" data-step="0" role="img" aria-label="ภาพจำลอง: มือถือสแกนนามบัตรตัวอย่าง แล้วกรอกข้อมูลลงช่องให้" data-i18n-aria="demo.alt">
+            <span class="btn-side btn-power" aria-hidden="true"></span>
+            <span class="btn-side btn-vol" aria-hidden="true"></span>
             <div class="screen" aria-hidden="true">
               <span class="flash"></span>
+              <span class="punch"></span>
+              <span class="glare"></span>
               <div class="cam">
                 <p class="cam-hint" data-i18n="demo.hint">วางนามบัตรให้อยู่ในกรอบ</p>
                 <div class="cam-target">
@@ -269,6 +279,13 @@
             <figcaption>
               <h3 data-i18n="screens.1.title">นามบัตรทั้งหมดอยู่ในที่เดียว</h3>
               <p data-i18n="screens.1.text">ค้นหา ติดดาว จัดกลุ่ม เรียงลำดับ แล้วโทร ส่งอีเมล หรือทักแชตได้ทันที</p>
+            </figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="../img/screen-card-sheet.webp" width="857" height="1635" loading="lazy" decoding="async" alt="แผ่นรายละเอียดการ์ด มีปุ่ม WhatsApp, LinkedIn, แผนที่ และแชร์ พร้อมเบอร์โทร อีเมล และปุ่มแก้ไขกับลบ" data-i18n-alt="แผ่นรายละเอียดการ์ด มีปุ่ม WhatsApp, LinkedIn, แผนที่ และแชร์ พร้อมเบอร์โทร อีเมล และปุ่มแก้ไขกับลบ">
+            <figcaption>
+              <h3 data-i18n="screens.4.title">แตะการ์ดดูรายละเอียดครบ</h3>
+              <p data-i18n="screens.4.text">โทร แชตทาง WhatsApp หรือ LinkedIn ดูแผนที่ หรือแชร์ได้ทันที</p>
             </figcaption>
           </figure>
           <figure class="shot">
@@ -387,6 +404,7 @@
     <section id="pricing" class="section pricing">
       <div class="wrap">
         <h2 data-i18n="price.title">จ่ายครั้งเดียว ไม่มีรายเดือน</h2>
+        <p class="promise"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="3"/><path d="m9.2 12.2 2 2 3.8-4"/></svg><span data-i18n="price.note">การ์ดที่บันทึกแล้วอยู่ในเครื่องเสมอ ดูและส่งออกได้ทุกเมื่อ แม้ไม่ได้ซื้อ</span></p>
         <div class="plans">
           <article class="plan">
             <h3 data-i18n="price.free.title">ลองใช้ฟรี</h3>
@@ -400,7 +418,6 @@
             <a class="soon plan-cta" href="https://play.google.com/store/apps/details?id=com.rmshowdown.bizcapto&amp;referrer=utm_source%3Dwebsite_pricing"><small data-i18n="cta.play">มีให้โหลดแล้วบน</small><strong>Google Play</strong></a>
           </article>
         </div>
-        <p class="fine" data-i18n="price.note">นามบัตรที่บันทึกแล้วยังดูและส่งออกได้เสมอ</p>
       </div>
     </section>
 
